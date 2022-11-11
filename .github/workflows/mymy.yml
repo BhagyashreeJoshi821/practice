@@ -1,0 +1,19 @@
+name: Push File
+
+on: push
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushestestfile
+      uses: BhagyashreeJoshi821/practice/.github/workflows/ci.yml@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'test.txt'
+        destination_repo: 'BhagyashreeJoshi821/hello-world'
+        commit_message: 'A custom message for the commit'
