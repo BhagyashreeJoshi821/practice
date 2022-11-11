@@ -1,15 +1,15 @@
-runs-on: ubuntu-latest    
-    - name: checkout
-      uses: actions/checkout@v2
+runs-on: ubuntu-latest
+steps:
+ - uses: actions/checkout@v2
 
 
 name: Push File
 
-on: push
+ on: 
+  push:
 
 jobs:
-  copy-file:
-    
+  copy-file: 
     steps:  
     - name: Pushestestfile
       uses: BhagyashreeJoshi821/practice/.github/workflows/ci.yml@main
