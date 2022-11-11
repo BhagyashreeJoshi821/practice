@@ -5,8 +5,7 @@ steps:
 
 name: Push File
 
- on: 
-  push:
+on: push
 
 jobs:
   copy-file: 
