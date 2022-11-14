@@ -1,4 +1,5 @@
-name: reusable workflow example
+name: Push File
+
 on:
   workflow_call:
     inputs:
