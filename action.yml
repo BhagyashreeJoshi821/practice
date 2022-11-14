@@ -1,0 +1,33 @@
+name: Push File
+
+on:
+  workflow_call:
+    inputs:
+      source-file:
+        description: 'Source file from the origin directory'
+        required: true
+        type: string
+      destination-github-username:
+        description: 'Directory to push the file to'
+        required: true
+        type: string
+      destination-repository-name:
+        description: 'Destination repository'
+        required: true
+        type: string
+      user-email:
+        description: 'Email for the git commit'
+        required: true
+        type: string
+    secrets:
+      token:
+        required: true
+
+
+runs:
+
+    args:
+        source-file: ${{ inputs.source-file }}
+        destination-github-username: ${{ inputs.user-name }}
+        destination-repository-name: ${{ inputs.destination-repo }}
+        user-email: ${{ inputs.user-email }}
