@@ -7,7 +7,7 @@ on:
   
 jobs:
   call-workflow:
-    uses: BhagyashreeJoshi821/practice/.github/workflows/one.yml@main
+    uses: BhagyashreeJoshi821/practice/.github/workflows/two.yml@main
 
   call-workflow-passing-data:
     permissions:
