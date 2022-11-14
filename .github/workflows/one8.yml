@@ -7,9 +7,6 @@ on:
   
 jobs:
   call-workflow:
-    uses: BhagyashreeJoshi821/practice/.github/workflows/one8.yml@main
-    
-  call-workflow-passing-data:
     permissions:
       contents: read
       pull-requests: write
