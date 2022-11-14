@@ -8,7 +8,7 @@ jobs:
     steps:
 
     - uses: actions/checkout 
-         Default:${{ practice.bhagyajoshi96@gmail.com }}
+         Default:${{ github.bhagyajoshi96@gmail.com }}
   
   
     - name: Pushes test file
