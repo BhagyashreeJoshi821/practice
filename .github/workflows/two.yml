@@ -35,7 +35,7 @@ jobs:
   copy-file:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/github-action-push-to-another-repository@v2
+    - uses: actions/checkout@v2
       with:
         repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
