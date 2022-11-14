@@ -36,6 +36,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    
+    - uses: BhagyashreeJoshi821/practice2/.github/workflows/two.yml@main
       with:
         repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
