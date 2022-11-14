@@ -15,7 +15,6 @@ jobs:
         destination_folder: 'test-dir'
         user_email: 'bhagyajoshi96@gmail.com'
         user_name: 'BhagyashreeJoshi821'
-        commit_message: 'Push is successful'
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
       
