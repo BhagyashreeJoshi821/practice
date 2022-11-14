@@ -2,19 +2,15 @@ name: Call a reusable workflow
 
 on:
   push:
+    branches:
+      - main
   
 jobs:
   call-workflow:
     uses: BhagyashreeJoshi821/practice/.github/workflows/two.yml@main
-   
-  copy-files:
-   runs-on: ubuntu-latest
-   steps:
-   -  name: Copy files from one location to other  
-      uses: BhagyashreeJoshi821/practice/.github/workflows/one3.yml@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-      with:
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
+    with:
         source_file: 'test.txt'
         destination_repo: 'BhagyashreeJoshi821/practice2'
         destination_folder: 'test-dir'
