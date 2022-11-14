@@ -17,11 +17,9 @@ jobs:
           uses: BhagyashreeJoshi821/practice@main
           with:
             github_token: ${{ secrets.CUSTOM_TOKEN }}
-            patterns_to_include: '.github/workflows'
+            user_email: bhagyajoshi96@gmail.com
+            user_name: BhagyashreeJoshi821
+            source_file: test.txt
             destination_repo: practice2
-            exclude_private: true
-            exclude_forked: true
-            branches: main
-            committer_username: BhagyashreeJoshi821
-            committer_email: bhagyajoshi96@gmail.com
-            commit_message: "ci: update global workflows"
+            
+ 
