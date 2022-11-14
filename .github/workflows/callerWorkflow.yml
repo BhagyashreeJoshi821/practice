@@ -12,6 +12,7 @@ jobs:
   call-workflow-passing-data:
     uses: BhagyashreeJoshi821/practice/.github/workflows/calledWorkflow.yml@main
     with:
+        config-path: .github/labeler.yml
         source_file: 'test.txt'
         destination_repo: 'BhagyashreeJoshi821/practice2'
         destination_folder: 'test-dir'
