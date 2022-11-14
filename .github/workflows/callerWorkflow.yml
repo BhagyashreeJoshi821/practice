@@ -1,3 +1,20 @@
+name: Call a reusable workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  call-workflow-2-in-local-repo:
-    uses: ./.github/workflows/calledWorkflow.yml
+  call-workflow:
+    uses: ./.github/workflows/callerWorkflow.yml
+
+  call-workflow-passing-data:
+    permissions:
+      contents: read
+      pull-requests: write
+    uses: ./.github/workflows/callerWorkflow.yml
+    with:
+      config-path: .github/callerWorkflow.yml
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
