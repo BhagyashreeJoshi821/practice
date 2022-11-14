@@ -1,11 +1,10 @@
 
-name: Push File
-
+name: reusable workflow example
 on:
   workflow_call:
     inputs:
       config-path:
-        required: true
+        required: false
         type: string
     secrets:
       token:
@@ -18,4 +17,3 @@ jobs:
     - uses: actions/checkout@v2
       with:
         repo-token: ${{ secrets.token }}
-        configuration-path: ${{ inputs.config-path }}
