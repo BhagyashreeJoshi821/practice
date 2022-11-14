@@ -7,7 +7,7 @@ on:
   
 jobs:
   call-workflow:
-    uses: BhagyashreeJoshi821/practice/.github/workflows/two.yml@main
+    uses: BhagyashreeJoshi821/practice2/.github/workflows/two.yml@main
     secrets:
       token: inherit
     with:
