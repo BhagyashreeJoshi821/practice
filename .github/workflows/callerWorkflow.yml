@@ -15,6 +15,11 @@ jobs:
       pull-requests: write
     uses: BhagyashreeJoshi821/practice/.github/workflows/calledWorkflow.yml@main
     with:
-      config-path: .github/checkout.yml
+        source_file: 'test.txt'
+        destination_repo: 'BhagyashreeJoshi821/practice2'
+        destination_folder: 'test-dir'
+        user_email: 'bhagyajoshi96@gmail.com'
+        user_name: 'BhagyashreeJoshi821'
+        commit_message: 'Push is successful'
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
