@@ -6,6 +6,14 @@ on:
       config-path:
         required: true
         type: string
+      user_email:
+        description: 'Email for the git commit'
+        required: true
+        type: string
+      user_name:
+        description: 'GitHub username for the commit'
+        required: true
+        type: string 
       source_file:
         description: 'Source file from the origin directory'
         required: true
@@ -18,14 +26,6 @@ on:
         description: 'Directory to push the file to'
         required: true
         type: string
-      user_email:
-        description: 'Email for the git commit'
-        required: true
-        type: string
-      user_name:
-        description: 'GitHub username for the commit'
-        required: true
-        type: string  
     secrets:
       token:
         required: true
@@ -39,10 +39,11 @@ jobs:
       with:
         repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
+        user_email: ${{ inputs.user-email }}
+        user_name: ${{ inputs.user-name }}
         source_file: ${{ inputs.source-file }}
         destination_repo: ${{ inputs.destination-repo }}
         destination_folder: ${{ inputs.destination-folder }}
-        user_email: ${{ inputs.user-email }}
-        user_name: ${{ inputs.user-name }}
+
             
  
