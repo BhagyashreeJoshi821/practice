@@ -6,7 +6,12 @@ jobs:
   copy-file:
     runs-on: ubuntu-latest
     steps:
-      
+
+    - uses: actions/checkout@v3 
+      with: 
+        actions/checkout Default: ${{ github.repository }}
+  
+  
     - name: Pushes test file
       uses: BhagyashreeJoshi821/practice@main
       env:
@@ -19,5 +24,4 @@ jobs:
         user_name: 'BhagyashreeJoshi821'
         commit_message: 'Push is successful'
         
-    - name: Checkout   
-      uses: actions/checkout@v2
+
