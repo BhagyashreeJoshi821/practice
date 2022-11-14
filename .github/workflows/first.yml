@@ -10,11 +10,11 @@ on:
 jobs:
   copy-file:
     runs-on: ubuntu-latest
+    steps:
+     
     - uses: actions/checkout@v2
-
-    steps:     
+      
     - name: Pushestestfile
-      uses: BhagyashreeJoshi821/practice/.github/workflows/ci.yml@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
