@@ -16,6 +16,7 @@ jobs:
       with:
         source_file: 'test.txt'
         destination_repo: 'BhagyashreeJoshi821/practice2'
+        destination_folder: 'test-dir'
         user_email: 'bhagyajoshi96@gmail.com'
         user_name: 'BhagyashreeJoshi821'
         commit_message: 'Push is successful'
