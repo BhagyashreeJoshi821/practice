@@ -12,11 +12,12 @@ jobs:
       token: inherit
     with:
         config-path: .github/labeler.yml
+        user_email: 'bhagyajoshi96@gmail.com'
+        user_name: 'BhagyashreeJoshi821'
         source_file: 'test2.txt'
         destination_repo: 'BhagyashreeJoshi821/practice2'
         destination_folder: 'test-dir'
-        user_email: 'bhagyajoshi96@gmail.com'
-        user_name: 'BhagyashreeJoshi821'
+
 
 
       
