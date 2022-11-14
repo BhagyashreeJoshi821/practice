@@ -3,19 +3,11 @@ name: Push File
 on:
   workflow_call:
     inputs:
+      config-path:
+        required: true
+        type: string
       source_file:
         description: 'Source file from the origin directory'
-        required: true
-        type: string
-      user_email:
-        description: 'Email for the git commit'
-        required: true
-        type: string
-      user_name:
-        description: 'GitHub username for the commit'
-        required: true
-        type: string
-      config-path:
         required: true
         type: string
       destination_repo:
@@ -26,6 +18,14 @@ on:
         description: 'Directory to push the file to'
         required: true
         type: string
+      user_email:
+        description: 'Email for the git commit'
+        required: true
+        type: string
+      user_name:
+        description: 'GitHub username for the commit'
+        required: true
+        type: string  
     secrets:
       token:
         required: true
