@@ -1,2 +1,2 @@
 #! /bin/sh
-cp -r practice/test.txt practice2
+sudo cp -r practice/test.txt practice2
