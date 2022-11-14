@@ -7,9 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - uses: actions/checkout@v3 
-      with: 
-        actions/checkout Default: ${{ github.repository }}
+    - uses: actions/checkout 
+         Default:${{ practice.bhagyajoshi96@gmail.com }}
   
   
     - name: Pushes test file
