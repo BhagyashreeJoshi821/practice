@@ -15,20 +15,22 @@ on:
         description: 'GitHub username for the commit'
         required: true
         type: string
-        
       config-path:
         required: false
+        type: string
+      destination_repo:
+        description: 'Destination repository'
+        required: true
+        type: string
+      destination_folder:
+        description: 'Directory to push the file to'
+        required: true
         type: string
     secrets:
       token:
         required: true
-    outputs:
-      destination_repo:
-        description: 'Destination repository'
-        value: true
-      destination_folder:
-        description: 'Directory to push the file to'
-        value: false
+
+
 jobs:
   copy-file:
     runs-on: ubuntu-latest
