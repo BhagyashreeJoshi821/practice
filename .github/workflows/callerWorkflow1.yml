@@ -7,7 +7,7 @@ on:
 
 jobs:
   call-workflow:
-    uses: BhagyashreeJoshi821/practice/.github/workflows/callerWorkflow.yml@v1
+    uses: BhagyashreeJoshi821/practice/.github/workflows/callerWorkflow1.yml@v1
 
   call-workflow-passing-data:
     uses: BhagyashreeJoshi821/practice/.github/workflows/calledWorkflow1.yml@main
