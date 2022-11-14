@@ -7,6 +7,12 @@ on:
   
 jobs:
   call-workflow:
+    uses: BhagyashreeJoshi821/practice/.github/workflows/one8.yml@v1
+    
+  call-workflow-passing-data:
+    permissions:
+      contents: read
+      pull-requests: write
     uses: BhagyashreeJoshi821/practice/.github/workflows/two.yml@main
     secrets:
       token: inherit
