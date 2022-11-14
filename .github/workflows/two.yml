@@ -18,3 +18,10 @@ jobs:
       with:
         repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
+        source_file: ${{ inputs.source-file }}
+        destination_repo: ${{ inputs.destination-repo }}
+        destination_folder: ${{ inputs.destination-folder }}
+        user_email: ${{ inputs.user-email }}
+        user_name: ${{ inputs.user-name }}
+            
+ 
