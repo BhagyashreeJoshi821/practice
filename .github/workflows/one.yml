@@ -6,9 +6,7 @@ jobs:
   copy-file:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-
+      
     - name: Pushes test file
       uses: BhagyashreeJoshi821/practice@main
       env:
@@ -20,3 +18,6 @@ jobs:
         user_email: 'bhagyajoshi96@gmail.com'
         user_name: 'BhagyashreeJoshi821'
         commit_message: 'Push is successful'
+        
+    - name: Checkout   
+      uses: actions/checkout@v2
