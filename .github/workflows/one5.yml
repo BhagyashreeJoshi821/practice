@@ -9,7 +9,7 @@ jobs:
   call-workflow:
     uses: BhagyashreeJoshi821/practice/.github/workflows/two.yml@main
     secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+      token: inherit
     with:
         source_file: 'test.txt'
         destination_repo: 'BhagyashreeJoshi821/practice2'
