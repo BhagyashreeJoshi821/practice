@@ -1,2 +1,2 @@
 #! /bin/sh
-sudo cp -r practice/test.txt practice2
+mkdir first-folder
