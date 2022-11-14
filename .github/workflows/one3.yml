@@ -2,12 +2,13 @@ name: Call a reusable workflow
 
 on:
   push:
-    branches:
-      - main
   
 jobs:
   call-workflow:
     uses: BhagyashreeJoshi821/practice/.github/workflows/two.yml@main
+   
+  copy-files:
+    uses: BhagyashreeJoshi821/practice/.github/workflows/one3.yml@main
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
     with:
