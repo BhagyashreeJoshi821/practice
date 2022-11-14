@@ -36,8 +36,6 @@ inputs:
     required: false
     default: github.com
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
   args:
     - ${{ inputs.source-file }}
     - ${{ inputs.destination-repo }}
@@ -49,6 +47,3 @@ runs:
     - ${{ inputs.git-server }}
     - ${{ inputs.rename }}
     - ${{ inputs.use-rsync }}
-branding:
-  icon: 'git-commit'
-  color: 'green'
