@@ -26,7 +26,7 @@ on:
 
 runs:
 
-    sequencetoken:
+    args:
         source-file: ${{ inputs.source-file }}
         destination-github-username: ${{ inputs.user-name }}
         destination-repository-name: ${{ inputs.destination-repo }}
