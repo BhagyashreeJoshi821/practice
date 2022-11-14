@@ -7,10 +7,6 @@ on:
   
 jobs:
   call-workflow:
-    uses: BhagyashreeJoshi821/practice/.github/workflows/one3.yml@main
-    
-    
-  call-workflow-passing-data:
     uses: BhagyashreeJoshi821/practice/.github/workflows/two.yml@main
     with:
         source_file: 'test.txt'
