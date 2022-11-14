@@ -8,12 +8,13 @@ on:
 jobs:
   call-workflow:
     uses: BhagyashreeJoshi821/practice/.github/workflows/two.yml@main
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
     with:
         source_file: 'test.txt'
         destination_repo: 'BhagyashreeJoshi821/practice2'
         destination_folder: 'test-dir'
         user_email: 'bhagyajoshi96@gmail.com'
         user_name: 'BhagyashreeJoshi821'
-    secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+
       
