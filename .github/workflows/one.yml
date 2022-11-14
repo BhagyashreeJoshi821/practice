@@ -7,13 +7,13 @@ on:
   
 jobs:
   call-workflow:
-    uses: BhagyashreeJoshi821/practice/.github/workflows/callerWorkflow1.yml@main
+    uses: BhagyashreeJoshi821/practice/.github/workflows/one.yml@main
 
   call-workflow-passing-data:
     permissions:
       contents: read
       pull-requests: write
-    uses: BhagyashreeJoshi821/practice/.github/workflows/calledWorkflow.yml@main
+    uses: BhagyashreeJoshi821/practice/.github/workflows/two.yml@main
     with:
       config-path: .github/labeler.yml
     secrets:
