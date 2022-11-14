@@ -16,7 +16,7 @@ on:
         required: true
         type: string
       config-path:
-        required: false
+        required: true
         type: string
       destination_repo:
         description: 'Destination repository'
