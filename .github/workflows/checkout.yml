@@ -13,7 +13,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    uses: /.github/workflows/calledWorkflow.yml@main
+    uses: BhagyashreeJoshi821/practice/.github/workflows/calledWorkflow.yml@main
     with:
       config-path: .github/checkout.yml
     secrets:
