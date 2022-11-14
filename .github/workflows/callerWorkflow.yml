@@ -10,7 +10,7 @@ jobs:
     uses: BhagyashreeJoshi821/practice/.github/workflows/callerWorkflow.yml@v1
 
   call-workflow-passing-data:
-    uses: BhagyashreeJoshi821/practice/.github/workflows/calledWorkflow.yml@main
+    uses: BhagyashreeJoshi821/practice/.github/workflows/calledWorkflow1.yml@main
     with:
         config-path: .github/labeler.yml
         source_file: 'test.txt'
